@@ -55,7 +55,7 @@ with col2:
         options=[
             "Integrada / GTX 750 Ti (é, tá médio)", 
             "GTX 1660 / RX 580 / RTX 2060 (Tá bom!)", 
-            "RTX 3060 / RX 6600 ou superior (Maquina da porra)"
+            "RTX 3060 / RX 6600 ou superior (Que GPUs alienigenas são essas?!)"
         ]
     )
     if "Integrada" in gpu_escolha:
@@ -152,4 +152,3 @@ if st.button("Verificar Simuladores Compatíveis", type="primary"):
             )
     else:
         st.error("Nenhum simulador do catálogo roda nessa configuração. Hora de jogar essa coisa que você chama de PC e dar um upgrade! 💻")
-        
