@@ -37,7 +37,7 @@ with col1:
     cpu_escolha = st.selectbox(
         "Geração do Processador (CPU)",
         options=[
-            "1ª até 5ª Geração (Podre)", 
+            "1ª até 5ª Geração (Mediano)", 
             "6ª até 9ª Geração (Incrivel!)", 
             "10ª Geração até a Atual (Perfeito!)"
         ]
@@ -53,7 +53,7 @@ with col2:
     gpu_escolha = st.selectbox(
         "Placa de Vídeo (GPU)",
         options=[
-            "Integrada / GTX 750 Ti (Outra podridão 😬)", 
+            "Integrada / GTX 750 Ti (é, tá médio)", 
             "GTX 1660 / RX 580 / RTX 2060 (Tá bom!)", 
             "RTX 3060 / RX 6600 ou superior (Maquina da porra)"
         ]
@@ -68,7 +68,7 @@ with col2:
 with col3:
     ram_escolha = st.selectbox(
         "Memória RAM",
-        options=["4 GB ou menos(se mata)", "8 GB(médiocre)", "16 GB(Balanciado)", "32 GB(Tá otimo!)", "64 GB ou superior(Tu tem dinheiro pra caralho)"]
+        options=["4 GB ou menos(minimo do minimo)", "8 GB(médio)", "16 GB(Balanciado)", "32 GB(Tá otimo!)", "64 GB ou superior(Tu tem dinheiro ein >:D)"]
     )
     
     ram_usuario = int(ram_escolha.split()[0])
@@ -107,7 +107,7 @@ jogos = [
         "cpu_min": 1,  
         "gpu_min": 1,  
         "ram_min": 8,
-        "genero": "Simulador de corrida brasileiro mais foda"
+        "genero": "Simulador de corrida brasileiro mais top"
     },
     {
         "nome": "Automobilista 2",
@@ -121,14 +121,14 @@ jogos = [
         "cpu_min": 1,  
         "gpu_min": 1,  
         "ram_min": 4,
-        "genero": "Simulador roda em qualquer desgraça"
+        "genero": "Simulador que roda em qualquer coisa"
     },
     {
         "nome": "Rfactor 2",
         "cpu_min": 1,  
         "gpu_min": 2,  
         "ram_min": 16,
-        "genero": "Simulador bom, mas que não roda em qualquer desgraça"
+        "genero": "Simulador bom, mas que não roda em qualquer coisa"
     }
 ]
 
@@ -151,4 +151,5 @@ if st.button("Verificar Simuladores Compatíveis", type="primary"):
                 unsafe_allow_html=True
             )
     else:
-        st.error("Nenhum simulador do catálogo roda nessa configuração. Hora de jogar essa coisa que você chama de PC no lixo! 💻")
+        st.error("Nenhum simulador do catálogo roda nessa configuração. Hora de jogar essa coisa que você chama de PC e dar um upgrade! 💻")
+        
